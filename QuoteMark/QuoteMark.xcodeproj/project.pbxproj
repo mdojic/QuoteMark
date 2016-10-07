@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40467E5B1DA7151B001DC6A6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40467E5A1DA7151B001DC6A6 /* CoreData.framework */; };
+		40467E5E1DA71572001DC6A6 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 40467E5C1DA71572001DC6A6 /* Model.xcdatamodeld */; };
+		40467E631DA72117001DC6A6 /* Quote+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40467E5F1DA72117001DC6A6 /* Quote+CoreDataProperties.swift */; };
+		40467E641DA72117001DC6A6 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40467E601DA72117001DC6A6 /* Quote.swift */; };
+		40467E651DA72117001DC6A6 /* Book+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40467E611DA72117001DC6A6 /* Book+CoreDataProperties.swift */; };
+		40467E661DA72117001DC6A6 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40467E621DA72117001DC6A6 /* Book.swift */; };
 		40B4794E1D976EA600A5F0C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B4794D1D976EA600A5F0C2 /* AppDelegate.swift */; };
 		40B479501D976EA600A5F0C2 /* BookListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B4794F1D976EA600A5F0C2 /* BookListViewController.swift */; };
 		40B479531D976EA600A5F0C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40B479511D976EA600A5F0C2 /* Main.storyboard */; };
@@ -34,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		40467E5A1DA7151B001DC6A6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		40467E5D1DA71572001DC6A6 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		40467E5F1DA72117001DC6A6 /* Quote+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Quote+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		40467E601DA72117001DC6A6 /* Quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		40467E611DA72117001DC6A6 /* Book+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Book+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		40467E621DA72117001DC6A6 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		406A36CB1D9F81BB00A540F3 /* MyPlayground2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground2.playground; sourceTree = "<group>"; };
 		40B4794A1D976EA600A5F0C2 /* QuoteMark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuoteMark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40B4794D1D976EA600A5F0C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40467E5B1DA7151B001DC6A6 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +92,12 @@
 		40B479411D976EA600A5F0C2 = {
 			isa = PBXGroup;
 			children = (
+				40467E5F1DA72117001DC6A6 /* Quote+CoreDataProperties.swift */,
+				40467E601DA72117001DC6A6 /* Quote.swift */,
+				40467E611DA72117001DC6A6 /* Book+CoreDataProperties.swift */,
+				40467E621DA72117001DC6A6 /* Book.swift */,
+				40467E5C1DA71572001DC6A6 /* Model.xcdatamodeld */,
+				40467E5A1DA7151B001DC6A6 /* CoreData.framework */,
 				406A36CB1D9F81BB00A540F3 /* MyPlayground2.playground */,
 				40FA864C1D9830AA00C0076B /* MyPlayground.playground */,
 				40B4794C1D976EA600A5F0C2 /* QuoteMark */,
@@ -262,6 +281,11 @@
 			files = (
 				40B479501D976EA600A5F0C2 /* BookListViewController.swift in Sources */,
 				40B4794E1D976EA600A5F0C2 /* AppDelegate.swift in Sources */,
+				40467E661DA72117001DC6A6 /* Book.swift in Sources */,
+				40467E651DA72117001DC6A6 /* Book+CoreDataProperties.swift in Sources */,
+				40467E631DA72117001DC6A6 /* Quote+CoreDataProperties.swift in Sources */,
+				40467E641DA72117001DC6A6 /* Quote.swift in Sources */,
+				40467E5E1DA71572001DC6A6 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +531,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		40467E5C1DA71572001DC6A6 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				40467E5D1DA71572001DC6A6 /* Model.xcdatamodel */,
+			);
+			currentVersion = 40467E5D1DA71572001DC6A6 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 40B479421D976EA600A5F0C2 /* Project object */;
 }
