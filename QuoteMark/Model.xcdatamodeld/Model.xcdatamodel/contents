@@ -3,7 +3,7 @@
     <entity name="Book" representedClassName=".Book" syncable="YES">
         <attribute name="author" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="quotes" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Quote" inverseName="book" inverseEntity="Quote" syncable="YES"/>
+        <relationship name="quotes" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Quote" inverseName="book" inverseEntity="Quote" syncable="YES"/>
     </entity>
     <entity name="Quote" representedClassName=".Quote" syncable="YES">
         <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>

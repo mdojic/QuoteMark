@@ -1,8 +1,8 @@
 //
-//  Book+CoreDataProperties.swift
+//  Quote+CoreDataProperties.swift
 //  QuoteMark
 //
-//  Created by Milan Dojic on 10/6/16.
+//  Created by Milan Dojic on 10/7/16.
 //  Copyright © 2016 Milan Dojic. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -12,10 +12,9 @@
 import Foundation
 import CoreData
 
-extension Book {
+extension Quote {
 
-    @NSManaged var name: String?
-    @NSManaged var author: String?
-    @NSManaged var quotes: [Quote]?
+    @NSManaged var content: String?
+    @NSManaged var book: Book?
 
 }

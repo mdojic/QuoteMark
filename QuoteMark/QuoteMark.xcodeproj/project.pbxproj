@@ -9,10 +9,6 @@
 /* Begin PBXBuildFile section */
 		40467E5B1DA7151B001DC6A6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40467E5A1DA7151B001DC6A6 /* CoreData.framework */; };
 		40467E5E1DA71572001DC6A6 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 40467E5C1DA71572001DC6A6 /* Model.xcdatamodeld */; };
-		40467E631DA72117001DC6A6 /* Quote+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40467E5F1DA72117001DC6A6 /* Quote+CoreDataProperties.swift */; };
-		40467E641DA72117001DC6A6 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40467E601DA72117001DC6A6 /* Quote.swift */; };
-		40467E651DA72117001DC6A6 /* Book+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40467E611DA72117001DC6A6 /* Book+CoreDataProperties.swift */; };
-		40467E661DA72117001DC6A6 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40467E621DA72117001DC6A6 /* Book.swift */; };
 		40B4794E1D976EA600A5F0C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B4794D1D976EA600A5F0C2 /* AppDelegate.swift */; };
 		40B479501D976EA600A5F0C2 /* BookListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B4794F1D976EA600A5F0C2 /* BookListViewController.swift */; };
 		40B479531D976EA600A5F0C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40B479511D976EA600A5F0C2 /* Main.storyboard */; };
@@ -20,6 +16,11 @@
 		40B479581D976EA600A5F0C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40B479561D976EA600A5F0C2 /* LaunchScreen.storyboard */; };
 		40B479631D976EA700A5F0C2 /* QuoteMarkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B479621D976EA700A5F0C2 /* QuoteMarkTests.swift */; };
 		40B4796E1D976EA700A5F0C2 /* QuoteMarkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B4796D1D976EA700A5F0C2 /* QuoteMarkUITests.swift */; };
+		40FF90351DA86C60002CDC2F /* Quote+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FF90311DA86C60002CDC2F /* Quote+CoreDataProperties.swift */; };
+		40FF90361DA86C60002CDC2F /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FF90321DA86C60002CDC2F /* Quote.swift */; };
+		40FF90371DA86C60002CDC2F /* Book+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FF90331DA86C60002CDC2F /* Book+CoreDataProperties.swift */; };
+		40FF90381DA86C60002CDC2F /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FF90341DA86C60002CDC2F /* Book.swift */; };
+		40FF903A1DA86F23002CDC2F /* NewBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FF90391DA86F23002CDC2F /* NewBookViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,10 +43,6 @@
 /* Begin PBXFileReference section */
 		40467E5A1DA7151B001DC6A6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		40467E5D1DA71572001DC6A6 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		40467E5F1DA72117001DC6A6 /* Quote+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Quote+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		40467E601DA72117001DC6A6 /* Quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
-		40467E611DA72117001DC6A6 /* Book+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Book+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		40467E621DA72117001DC6A6 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		406A36CB1D9F81BB00A540F3 /* MyPlayground2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground2.playground; sourceTree = "<group>"; };
 		40B4794A1D976EA600A5F0C2 /* QuoteMark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuoteMark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40B4794D1D976EA600A5F0C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +58,11 @@
 		40B4796D1D976EA700A5F0C2 /* QuoteMarkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteMarkUITests.swift; sourceTree = "<group>"; };
 		40B4796F1D976EA700A5F0C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40FA864C1D9830AA00C0076B /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		40FF90311DA86C60002CDC2F /* Quote+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Quote+CoreDataProperties.swift"; path = "QuoteMark/CoreData/Quote+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		40FF90321DA86C60002CDC2F /* Quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Quote.swift; path = QuoteMark/CoreData/Quote.swift; sourceTree = "<group>"; };
+		40FF90331DA86C60002CDC2F /* Book+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Book+CoreDataProperties.swift"; path = "QuoteMark/CoreData/Book+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		40FF90341DA86C60002CDC2F /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Book.swift; path = QuoteMark/CoreData/Book.swift; sourceTree = "<group>"; };
+		40FF90391DA86F23002CDC2F /* NewBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewBookViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,10 +94,10 @@
 		40B479411D976EA600A5F0C2 = {
 			isa = PBXGroup;
 			children = (
-				40467E5F1DA72117001DC6A6 /* Quote+CoreDataProperties.swift */,
-				40467E601DA72117001DC6A6 /* Quote.swift */,
-				40467E611DA72117001DC6A6 /* Book+CoreDataProperties.swift */,
-				40467E621DA72117001DC6A6 /* Book.swift */,
+				40FF90311DA86C60002CDC2F /* Quote+CoreDataProperties.swift */,
+				40FF90321DA86C60002CDC2F /* Quote.swift */,
+				40FF90331DA86C60002CDC2F /* Book+CoreDataProperties.swift */,
+				40FF90341DA86C60002CDC2F /* Book.swift */,
 				40467E5C1DA71572001DC6A6 /* Model.xcdatamodeld */,
 				40467E5A1DA7151B001DC6A6 /* CoreData.framework */,
 				406A36CB1D9F81BB00A540F3 /* MyPlayground2.playground */,
@@ -122,6 +124,7 @@
 			children = (
 				40B4794D1D976EA600A5F0C2 /* AppDelegate.swift */,
 				40B4794F1D976EA600A5F0C2 /* BookListViewController.swift */,
+				40FF90391DA86F23002CDC2F /* NewBookViewController.swift */,
 				40B479511D976EA600A5F0C2 /* Main.storyboard */,
 				40B479541D976EA600A5F0C2 /* Assets.xcassets */,
 				40B479561D976EA600A5F0C2 /* LaunchScreen.storyboard */,
@@ -281,10 +284,11 @@
 			files = (
 				40B479501D976EA600A5F0C2 /* BookListViewController.swift in Sources */,
 				40B4794E1D976EA600A5F0C2 /* AppDelegate.swift in Sources */,
-				40467E661DA72117001DC6A6 /* Book.swift in Sources */,
-				40467E651DA72117001DC6A6 /* Book+CoreDataProperties.swift in Sources */,
-				40467E631DA72117001DC6A6 /* Quote+CoreDataProperties.swift in Sources */,
-				40467E641DA72117001DC6A6 /* Quote.swift in Sources */,
+				40FF903A1DA86F23002CDC2F /* NewBookViewController.swift in Sources */,
+				40FF90381DA86C60002CDC2F /* Book.swift in Sources */,
+				40FF90371DA86C60002CDC2F /* Book+CoreDataProperties.swift in Sources */,
+				40FF90351DA86C60002CDC2F /* Quote+CoreDataProperties.swift in Sources */,
+				40FF90361DA86C60002CDC2F /* Quote.swift in Sources */,
 				40467E5E1DA71572001DC6A6 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

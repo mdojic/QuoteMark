@@ -55,10 +55,10 @@
             </objects>
             <point key="canvasLocation" x="635" y="318"/>
         </scene>
-        <!--View Controller-->
+        <!--New Book View Controller-->
         <scene sceneID="rQ5-MU-nhb">
             <objects>
-                <viewController id="PXh-hA-jot" sceneMemberID="viewController">
+                <viewController id="PXh-hA-jot" customClass="NewBookViewController" customModule="QuoteMark" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JoZ-zY-XRt"/>
                         <viewControllerLayoutGuide type="bottom" id="Yd2-6O-JEt"/>
@@ -74,12 +74,20 @@
                                 </constraints>
                                 <items>
                                     <navigationItem title="Add Book" id="DMJ-OW-ppk">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="VQn-OG-315"/>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="8tK-KG-akN"/>
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="VQn-OG-315">
+                                            <connections>
+                                                <action selector="cancelButtonClicked:" destination="PXh-hA-jot" id="jLD-lO-nen"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="8tK-KG-akN">
+                                            <connections>
+                                                <action selector="saveButtonClicked:" destination="PXh-hA-jot" id="rge-nR-3vo"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J0q-bf-W8G">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Book Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J0q-bf-W8G">
                                 <rect key="frame" x="30" y="84" width="540" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="3kT-En-mxb"/>
@@ -87,52 +95,32 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="agX-gz-vct">
-                                <rect key="frame" x="30" y="207" width="540" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Author Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="agX-gz-vct">
+                                <rect key="frame" x="30" y="158" width="540" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="sPL-am-Wjd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKc-uA-aYs">
-                                <rect key="frame" x="200" y="139" width="200" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="sXq-EW-KFX"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JEQ-8M-OP6">
-                                <rect key="frame" x="200" y="266" width="200" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="3OC-FN-QCu"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="J0q-bf-W8G" firstAttribute="leading" secondItem="qDG-KW-0oh" secondAttribute="leading" constant="30" id="2GD-vW-7V5"/>
                             <constraint firstAttribute="trailing" secondItem="agX-gz-vct" secondAttribute="trailing" constant="30" id="3rR-o7-B3F"/>
                             <constraint firstItem="gBX-0X-VcZ" firstAttribute="top" secondItem="qDG-KW-0oh" secondAttribute="top" id="966-fR-rZW"/>
-                            <constraint firstItem="JEQ-8M-OP6" firstAttribute="top" secondItem="agX-gz-vct" secondAttribute="bottom" constant="29" id="H15-aE-XYW"/>
                             <constraint firstAttribute="trailing" secondItem="J0q-bf-W8G" secondAttribute="trailing" constant="30" id="JmT-Lc-fUx"/>
                             <constraint firstItem="agX-gz-vct" firstAttribute="leading" secondItem="qDG-KW-0oh" secondAttribute="leading" constant="30" id="Shf-er-nkU"/>
-                            <constraint firstItem="JEQ-8M-OP6" firstAttribute="leading" secondItem="qDG-KW-0oh" secondAttribute="leading" constant="200" id="aGH-X6-OSY"/>
-                            <constraint firstAttribute="trailing" secondItem="hKc-uA-aYs" secondAttribute="trailing" constant="200" id="cwc-fU-yJu"/>
-                            <constraint firstItem="hKc-uA-aYs" firstAttribute="top" secondItem="J0q-bf-W8G" secondAttribute="bottom" constant="25" id="df9-Rl-bSg"/>
-                            <constraint firstItem="hKc-uA-aYs" firstAttribute="leading" secondItem="qDG-KW-0oh" secondAttribute="leading" constant="200" id="f5b-MT-vAp"/>
-                            <constraint firstItem="agX-gz-vct" firstAttribute="top" secondItem="J0q-bf-W8G" secondAttribute="bottom" constant="93" id="lyd-84-Qtm"/>
-                            <constraint firstAttribute="trailing" secondItem="JEQ-8M-OP6" secondAttribute="trailing" constant="200" id="msd-Cf-z43"/>
+                            <constraint firstItem="agX-gz-vct" firstAttribute="top" secondItem="J0q-bf-W8G" secondAttribute="bottom" constant="44" id="lyd-84-Qtm"/>
                             <constraint firstItem="gBX-0X-VcZ" firstAttribute="leading" secondItem="qDG-KW-0oh" secondAttribute="leading" id="pdB-at-P2Q"/>
                             <constraint firstItem="J0q-bf-W8G" firstAttribute="top" secondItem="gBX-0X-VcZ" secondAttribute="bottom" constant="40" id="wFb-rO-9QG"/>
                             <constraint firstAttribute="trailing" secondItem="gBX-0X-VcZ" secondAttribute="trailing" id="yw2-HB-b0U"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="authorNameInput" destination="agX-gz-vct" id="cUj-Vj-8R4"/>
+                        <outlet property="bookNameInput" destination="J0q-bf-W8G" id="B3i-sB-xau"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n9h-aN-Ul2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
